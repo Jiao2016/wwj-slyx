@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>扫雷</title>
+	<script src="jquery.js"></script>
+	<script src="saolei.js"></script>
+	<style>
+	html,body{
+		height: 100%;
+		/*transform-style:preserve-3d;
+		background: linear-gradient(to bottom,blue,#fff);
+		overflow: hidden;*/
+		background: url(images/bg3.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.scene{
+		width: 500px;
+		height: 500px;
+		/*margin: 0 0 0 500px;*/
+		border-top: 1px solid #49281A;
+		border-left: 1px solid #49281A;
+		box-shadow: 5px 5px 5px #333;
+		/*transform:perspective(800px) rotateX(30deg);*/
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -250px 0 0 -280px;
+	}
+	.block{
+		width: 49px;
+		height: 49px;
+		border-bottom: 1px solid #49281A;
+		border-right: 1px solid #49281A;
+		float: left;
+		/*background: #FAE5BC;*/
+		box-shadow: 0 0 5px 3px #6F4027 inset;
+		cursor: pointer;
+		position: relative;
+	}
+	.show{
+		background:url(images/st.jpg);
+		background-position: -175px -262px;
+		/*background-size: 49px 49px;*/
+	}
+	.num{
+		background-color: transparent;
+		line-height: 50px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		color: #482715;
+		font-family:方正卡通简体; 
+	}
+	.time_tu{
+		width: 47px;
+		height: 47px;
+		position: absolute;
+		top: 200px;
+		left:180px;
+		background-image: url(images/st.jpg);
+		background-position: -175px 0;
+	}
+	.time{
+		width: 50px;
+		height: 50px;
+		padding-left: 30px;
+		position: absolute;
+		top: 203px;
+		left:210px;
+		font-size: 30px;
+		color: #482715;
+		font-weight: bold;
+		text-align: center;
+		line-height: 25px;
+		font-family:方正卡通简体; 
+	}
+	.flagbox_tu{
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		top: 280px;
+		left: 170px;
+		background-image: url(images/12.png);
+		background-size: 70px 70px;
+	}
+	.flagbox{
+		width: 50px;
+		height: 50px;
+		padding-left: 30px;
+		position: absolute;
+		top: 293px;
+		left: 210px;
+		font-size: 30px;
+		color: #482715;
+		font-weight: bold;
+		text-align: center;
+		line-height: 25px;
+		font-family:方正卡通简体; 
+	}
+	.flag{
+		background-image: url(images/12.png);
+		background-size: 70px 70px;
+		background-position: -10px -10px;
+	}
+	</style>
+</head>
+<body>
+	<div class="scene"></div>
+	<div class="time_tu"></div>
+	<div class="time">150</div>
+	<div class="flagbox_tu"></div>
+	<div class="flagbox">10</div>
+</body>
+</html>
